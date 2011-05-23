@@ -15,7 +15,7 @@
 		$page = curl_exec($c);
 		curl_close($c);
 		$page=json_decode($page);
-		//var_dump($zap);
+		
 		$miasto[]='';
 		foreach($page->rows as $klucz=>$wartosc)
 		{
