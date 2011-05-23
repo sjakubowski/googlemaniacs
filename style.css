@@ -1,0 +1,63 @@
+body{
+margin:0;
+padding:0;
+background-image:url('trawax4.jpg');
+}
+#glowna{
+margin:20px 0px 0px 0px;
+height:600px;
+
+}
+#wybor{
+float:left;
+height:600px;
+width:20%;
+}
+#box{
+margin:0px 0px 10px;
+padding:5px auto 5px;
+border-top:1px solid black;
+border-right:1px solid black;
+border-bottom:1px solid black;
+height:100px;
+background-color:white;
+border:3px solid #7fd020;
+}
+#sidebar{
+height:480px;
+background-color:white;
+overflow-y:scroll;
+border:3px solid #7fd020;
+}
+#sidebar li a{
+text-decoration:none;
+color:gray;
+}
+#sidebar li a:hover{
+color:white;
+background-color:#7fd020;
+}
+#sidebar li{
+list-style: circle;
+margin: 0;
+padding: 0.25em;
+border-top: 1px solid #83b748;
+}
+#mapa{
+background-color:white;
+float:left;
+height:100%;
+width:75%;
+margin-left:10px;
+border:3px solid #7fd020;
+}
+select{
+margin-left:25px; 
+}
+
+.text{
+text-align:center;
+color: white; text-shadow: #467909 0.1em 0.1em 0.2em;
+}
+.jeden{
+}
