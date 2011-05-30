@@ -10,7 +10,7 @@
 		}
 		////
 		 $c = curl_init();
-		 curl_setopt($c, CURLOPT_URL, 	'http://89.74.51.71:5984/googlemaps/_design/odleglosc/_view/'.$wybor.'2');
+		 curl_setopt($c, CURLOPT_URL, 	'http://153.19.5.12:14222/googlemaps/_design/odleglosc/_view/'.$wybor.'2');
 		 curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
 		$page = curl_exec($c);
 		curl_close($c);
@@ -18,14 +18,14 @@
 		$naj=$page->rows[0]->value;
 	    /////////
 	    $c1 = curl_init();
-		curl_setopt($c1, CURLOPT_URL, 	'http://89.74.51.71:5984/googlemaps/_design/odleglosc/_view/'.$wybor);
+		curl_setopt($c1, CURLOPT_URL, 	'http://153.19.5.12:14222/googlemaps/_design/odleglosc/_view/'.$wybor);
 		curl_setopt($c1, CURLOPT_RETURNTRANSFER, 1);
 		$page1 = curl_exec($c1);
 		curl_close($c1);
 		$page1=json_decode($page1);
 		/////
 		 $c2 = curl_init();
-		 curl_setopt($c2, CURLOPT_URL, 	'http://89.74.51.71:5984/googlemaps/_design/Wojew/_view/'.$wybor);
+		 curl_setopt($c2, CURLOPT_URL, 	'http://153.19.5.12:14222/googlemaps/_design/Wojew/_view/'.$wybor);
 		 curl_setopt($c2, CURLOPT_RETURNTRANSFER, 1);
 		$page2 = curl_exec($c2);
 		curl_close($c2);
@@ -56,7 +56,7 @@
 		}
 	   
 	  
-		var_dump($zap->value);
+	
 		
     $map = new GoogleMapAPI('map');
 
